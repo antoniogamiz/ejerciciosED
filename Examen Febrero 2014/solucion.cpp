@@ -1,4 +1,25 @@
+/* EJERCICIO 3 */
+class iterator {
+    public:
+        iterator();
+        iterator(const iterator & i);
+        bool operator!=(const iterator & i) const;
+        bool operator==(const iterator & i) const;
+        iterator & operator=(const iterator & i);
+        int operator*();
+        iterator & operator++();
+    private:
+        info object;
+        vector<list<info> >::iterator it_cubeta;
+        list<info>::iterator it_inside_cubeta;
+        iterator(info o);
+};
+iterator::iterator(const iterator & i){
+    
+}
 
+preorder_iterator begin_preorder();
+preorder_iterator end_preorder();
 
 /* EJERICCIO 4*/
 
